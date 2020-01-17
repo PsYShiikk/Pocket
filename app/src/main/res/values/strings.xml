@@ -4,4 +4,7 @@
     <string name="titreCategorie3">Catégorie 2</string>
     <string name="version">Version 0.0.0.1</string>
     <string name="nom_dev">Groupe 1664</string>
+    <string name="name_menu_1">audiovisuel</string>
+    <string name="name_menu_2">communication</string>
+    <string name="name_menu_3">web</string>
 </resources>
