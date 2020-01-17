@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Pocket</string>
+    <string name="titreCatégorie1">Coucoumec</string>
+    <string name="titreCategorie3">Catégorie 2</string>
 </resources>
