@@ -7,4 +7,5 @@
     <string name="name_menu_1">audiovisuel</string>
     <string name="name_menu_2">communication</string>
     <string name="name_menu_3">web</string>
+    <string name="title_activity_clap">clap</string>
 </resources>

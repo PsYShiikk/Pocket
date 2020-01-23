@@ -53,4 +53,6 @@
         android:text="@string/version" />
 
 
+
+
 </RelativeLayout>

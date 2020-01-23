@@ -34,7 +34,8 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity android:name=".communicationMenu" />
-        <activity android:name=".webMenu"></activity>
+        <activity android:name=".webMenu" />
+        <activity android:name=".clap"></activity>
     </application>
 
 </manifest>

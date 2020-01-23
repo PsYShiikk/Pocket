@@ -13,6 +13,10 @@ public class audiovisuelMenu extends AppCompatActivity {
         setContentView(R.layout.activity_audiovisuel);
     }
 
+    public void clapButton(View View){
+        startActivity(new Intent(this,clap.class));
+
+    }
 
 }
 
