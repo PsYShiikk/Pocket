@@ -6,13 +6,22 @@
     android:layout_height="match_parent"
     tools:context="com.example.leodelplanque.pocket.clap">
 
+    <View
+        android:id="@+id/myRectangle"
+        android:layout_width="424dp"
+        android:layout_height="757dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="82dp"
         android:layout_height="94dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/fond" />
@@ -21,10 +30,10 @@
         android:id="@+id/imageView7"
         android:layout_width="36dp"
         android:layout_height="39dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView6"
         app:layout_constraintEnd_toEndOf="@+id/imageView6"
         app:layout_constraintHorizontal_bias="0.566"
@@ -33,16 +42,112 @@
         app:layout_constraintVertical_bias="0.589"
         app:srcCompat="@mipmap/logo" />
 
+
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textScene"
+        android:layout_width="112dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="132dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:rotation="90"
+        android:text="SCENE"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/textPrise"
+        android:layout_width="112dp"
+        android:layout_height="49dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:rotation="90"
+        android:text="PRISE"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textScene"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textScene"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textSeq"
+        android:layout_width="180dp"
+        android:layout_height="46dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:rotation="90"
+        android:text="SEQUENCE"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textScene"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textChiffreSeq"
+        android:layout_width="42dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="156dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:rotation="90"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textSeq"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="@+id/textSeq"
+        app:layout_constraintTop_toBottomOf="@+id/textSeq"
+        app:layout_constraintVertical_bias="0.225" />
+
+    <TextView
+        android:id="@+id/textChiffreScene"
+        android:layout_width="42dp"
+        android:layout_height="44dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:rotation="90"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textChiffreSeq"
+        app:layout_constraintEnd_toEndOf="@+id/textScene"
+        app:layout_constraintStart_toStartOf="@+id/textScene"
+        app:layout_constraintTop_toTopOf="@+id/textChiffreSeq"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textChiffrePrise"
+        android:layout_width="42dp"
+        android:layout_height="44dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:rotation="90"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textChiffreSeq"
+        app:layout_constraintEnd_toEndOf="@+id/textPrise"
+        app:layout_constraintStart_toStartOf="@+id/textPrise"
+        app:layout_constraintTop_toTopOf="@+id/textChiffreSeq"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="EDIT"
+        android:textSize="24sp"
+        android:onClick="editButton"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/imageView6" />
 
 
 </android.support.constraint.ConstraintLayout>
