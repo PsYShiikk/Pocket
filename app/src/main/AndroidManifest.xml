@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".hex_rgb"></activity>
+        <activity android:name=".hex_bin_dec" />
         <activity
             android:name=".SplashScreen"
             android:label="@string/app_name"
@@ -35,7 +37,7 @@
 
         <activity android:name=".communicationMenu" />
         <activity android:name=".webMenu" />
-        <activity android:name=".clap"></activity>
+        <activity android:name=".clap" />
     </application>
 
 </manifest>
