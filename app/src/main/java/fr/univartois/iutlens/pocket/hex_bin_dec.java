@@ -1,7 +1,5 @@
-package com.example.leodelplanque.pocket;
+package fr.univartois.iutlens.pocket;
 
-import android.content.Intent;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;

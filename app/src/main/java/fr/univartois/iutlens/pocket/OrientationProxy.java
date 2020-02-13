@@ -1,11 +1,10 @@
-package com.example.leodelplanque.pocket;
+package fr.univartois.iutlens.pocket;
 
         import android.content.Context;
         import android.hardware.Sensor;
         import android.hardware.SensorEvent;
         import android.hardware.SensorEventListener;
         import android.hardware.SensorManager;
-        import android.util.Log;
         import android.view.Display;
         import android.view.Surface;
         import android.view.WindowManager;

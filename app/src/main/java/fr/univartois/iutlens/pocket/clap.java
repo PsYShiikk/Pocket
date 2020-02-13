@@ -1,4 +1,4 @@
-package com.example.leodelplanque.pocket;
+package fr.univartois.iutlens.pocket;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -7,7 +7,6 @@ import android.media.SoundPool;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 public class clap extends AppCompatActivity implements OrientationProxy.OrientationListener {
